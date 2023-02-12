@@ -1,0 +1,23 @@
+h1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box1 div{
+    color: green;
+}
