@@ -1,21 +1,18 @@
 document.getElementById("btn").onclick = function(){
-    var res = document.getElementById("luong").value;
-    res = Number(res);
-    if(res == 0 || res == null){
-        alert("Nhập lại");
+    var year = document.getElementById("namDuong").value;
+    year = Number(year);
+    if(year > 0){
+        
+        var cans = ["Quý","Giáp","Ất","Bính","Đinh","Mậu",
+        "Kỳ","Canh","Tân","Nhâm"];
+        var chis = ["Hợi","Tý","Sửu","Dần","Mão","Thìn","Tỵ"
+                    ,"Ngọ","Mùi","Thân","Dậu","Tuất"
+                   ];
+        var res = cans[(year-3)%10] + " " + chis[(year-3)%12];
+        document.getElementById("kq").innerHTML = res;
     }
     else{
-        if(res >= 15000000){
-            document.getElementById("thue").innerHTML = "Thue thu nhap: 30%"; 
-            document.getElementById("luongRong").innerHTML = "Lương của bạn la: " + res*70/100;
-        }
-        else if(res >= 7000000 && res < 15000000){
-            document.getElementById("thue").innerHTML = "Thue thu nhap: 20%"; 
-            document.getElementById("luongRong").innerHTML = "Lương của bạn la: " + res*80/100;
-        }
-        else{
-            document.getElementById("thue").innerHTML = "Thue thu nhap: 10%"; 
-            document.getElementById("luongRong").innerHTML = "Lương của bạn la: " + res*90/100;
-        }
-    }
+        alert("Nhập lại");
+    } 
+   
 }

@@ -1,23 +1,41 @@
-h1{
-    display: flex;
-    justify-content: center;
-
+.box {
+    width: 380px;
+    height: 150px;
+    background: green;
 }
 
-.box{
+h1 {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: blue;
+    color: aliceblue;
 }
 
-.box1{
+.lb {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
-.box1 div{
-    color: green;
+.lb h2 {
+    margin-top: 0px;
+    font-size: 17px;
+}
+
+.res{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.res input{
+    width: 80px;
+}
+
+.res #kq{
+    width: 80px;
+    height: 15.333x;
+    text-align: center;
+    background: whitesmoke;
+    padding: 3px 4px;
+    border-radius: 999px;
 }
