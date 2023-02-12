@@ -1,41 +1,48 @@
 .box {
-    width: 380px;
+    width: 420px;
     height: 150px;
     background: green;
 }
 
-h1 {
+.heading{
     display: flex;
     justify-content: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: blue;
-    color: aliceblue;
+    padding-top: 10px;
+    background: violet;
+    font-weight: 900;
+    font-size: 20px;
 }
 
-.lb {
+.box1{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.lb h2 {
-    margin-top: 0px;
-    font-size: 17px;
+.box1 .title{
+    margin-right: 20px;
 }
 
-.res{
-    display: flex;
-    justify-content: space-evenly;
+.box1 .div{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 5px;
 }
 
-.res input{
+.box1 input{
     width: 80px;
 }
 
-.res #kq{
-    width: 80px;
-    height: 15.333x;
+#btn{
+   margin: 10px 0 0 162px;
+   width: 193px;
+}
+
+#kq{
+    width: 290px;
+    height: 20px;
+    background: yellowgreen;
+    margin: 0 auto 0;
+    margin-top: 10px;
     text-align: center;
-    background: whitesmoke;
-    padding: 3px 4px;
-    border-radius: 999px;
 }
